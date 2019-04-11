@@ -1,2 +1,4 @@
-# dev_tips
-multiple develop language tips
+dev_tips
+===
+
+入门、实践、放弃
