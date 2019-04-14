@@ -89,7 +89,7 @@ Server running at http://127.0.0.1:3000/
    > 填加源码所在文件夹，即可开始
 
     <br>
-    
+
 * **使用vscode调试**
 
     <br>点击左侧工具栏中的DEBUG按钮，增加配置，选择node即可
@@ -115,3 +115,12 @@ Server running at http://127.0.0.1:3000/
 ## 常用WEB服务框架
 
 * [EXPRESS](http://expressjs.com)
+
+<br>
+<br>
+<br>
+
+**有用的网站**
+
+* [NODE SCHOOL](https://nodeschool.io)
+* [NPM](https://www.npmjs.com)
