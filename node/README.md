@@ -1,9 +1,9 @@
-[NODEJS](https://nodejs.org)
+[NODE](https://nodejs.org)
 ===
 
 ## 环境配置
 
-> 建议使用[NVM](https://github.com/creationix/nvm)来管理本机NODEJS版本 
+> 建议使用[NVM](https://github.com/creationix/nvm)来管理本机NODE版本 
 
 **NVM常用命令**
 
