@@ -1,6 +1,6 @@
 {
-  "name": "shijiang_ops",
-  "description": "shijaing ops frontend",
+  "name": "vue_muse_ui_example",
+  "description": "Vue & MuseUI Demo",
   "author": "liuzhijie",
   "private": true,
   "scripts": {
