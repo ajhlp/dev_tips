@@ -27,7 +27,7 @@ app.use(cookieParser(process.env.EXPRESS_SECRET));
 const unprotectedPathes = [
     /\/login\/*/,
     /\/public\/*/,
-    /favicon.ico/
+    /logo.png/
 ];
 app.use(jwt({ secret: process.env.JWT_SECRET }).unless({
     path: unprotectedPathes
