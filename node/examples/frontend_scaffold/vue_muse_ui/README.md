@@ -31,3 +31,16 @@ Vue + Muse UI 示例项目
 ```bash
 npm start
 ```
+
+## 其他说明
+
+* nginx配置
+
+```bash
+    
+    # 由于vue router配置了HTML5 history 模式， nginx需进行如下配置
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+```
