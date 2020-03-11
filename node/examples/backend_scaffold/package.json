@@ -20,7 +20,7 @@
   "homepage": "https://git@github.com/ajhlp/dev_tips/node/examples/backend_scaffold#README",
   "dependencies": {
     "@types/iconv": "^2.1.16",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.4",
     "debug": "~2.6.9",
