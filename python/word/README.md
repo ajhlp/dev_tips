@@ -127,7 +127,7 @@ for list in exist_document.Lists:
     # 列表值转为文本
     list.Range.ListFormat.ConvertNumbersToText()
 
-    # 获取列表的所有段落
+    # 获取列表的所有段落(注意：迭代顺序是倒序)
     for paragraph in list.ListParagraphs:
         
         # 列表编号
