@@ -72,3 +72,70 @@ field.Delete()
 # 更新
 field.Update()
 ```
+
+## 6. Lists 列表集合
+
+> 文件中的所有列表 👉[官方文档](https://docs.microsoft.com/zh-cn/dotnet/api/microsoft.office.interop.word.lists?view=word-pia)
+
+```cmd
+# 文件中列表的数量
+exist_document.Lists.Count
+```
+
+## 7. List 列表
+
+> 一个列表对象 👉[官方文档](https://docs.microsoft.com/zh-cn/dotnet/api/microsoft.office.interop.word.list?view=word-pia)
+
+```cmd
+for list in exist_document.Lists:
+
+    # 获取列表的所有段落
+    list.ListParagraphs
+
+    # 获取ListFormat对象，进而获取更多list的属性
+    list.Range.ListFormat
+
+    # 列表值转为文本
+    list.ConvertNumbersToText()
+```
+
+## 8. ListFormat 列表格式属性
+
+> 代表可应用于范围中各段落的列表格式属性 👉[官方文档](https://docs.microsoft.com/zh-cn/dotnet/api/microsoft.office.interop.word.listformat?view=word-pia)
+
+
+**ListType 枚举值**
+ 
+|值|说明|
+|--|--|
+2|项目符号列表
+1|可在段落正文中使用的 ListNum 域
+5|混合数字列表
+0|不带项目符号、编号或分级显示的列表
+4|分级显示的列表
+6|图片项目符号列表
+3|简单数字列表
+
+
+```cmd
+# 获取列表编号
+for list in exist_document.Lists:
+
+    # 列表类型
+    list.Range.ListFormat.ListType
+
+    # 列表值转为文本
+    list.Range.ListFormat.ConvertNumbersToText()
+
+    # 获取列表的所有段落
+    for paragraph in list.ListParagraphs:
+        
+        # 列表编号
+        paragraph.Range.ListFormat.ListString
+
+        # 列表级别
+        paragraph.Range.ListFormat.ListLevelNumber
+
+        # 列表本级别内的值
+        paragraph.Range.ListFormat.ListValue
+```
