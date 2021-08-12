@@ -4,14 +4,14 @@
 
 ## 1. 初始化应用实例
 
-```cmd
+```python
 # 启动word应用程序
 word = client.gencache.EnsureDispatch("Word.Application")
 ```
 
 ## 2. 初始化文档实例
 
-```cmd
+```python
 # 新建空白文档
 new_document = word.Documents.Add()
 
@@ -46,7 +46,7 @@ for paragraph in exist_document.Paragraphs:
 
 > WORD文件中通过分节符区分的块内容. 👉[官方文档](https://docs.microsoft.com/zh-cn/dotnet/api/microsoft.office.interop.word.sections?view=word-pia)
 
-```cmd
+```python
 # 通过Range获取指定区域内的节
 paragraph.Range.Sections
 
@@ -62,7 +62,7 @@ exist_document.Sections
 >
 > **13 目录域**
 
-```cmd
+```python
 # 获取文件中所有域
 exist_document.Fields
 
@@ -77,7 +77,7 @@ field.Update()
 
 > 文件中的所有列表 👉[官方文档](https://docs.microsoft.com/zh-cn/dotnet/api/microsoft.office.interop.word.lists?view=word-pia)
 
-```cmd
+```python
 # 文件中列表的数量
 exist_document.Lists.Count
 ```
@@ -86,7 +86,7 @@ exist_document.Lists.Count
 
 > 一个列表对象 👉[官方文档](https://docs.microsoft.com/zh-cn/dotnet/api/microsoft.office.interop.word.list?view=word-pia)
 
-```cmd
+```python
 for list in exist_document.Lists:
 
     # 获取列表的所有段落
@@ -117,7 +117,7 @@ for list in exist_document.Lists:
 3|简单数字列表
 
 
-```cmd
+```python
 # 获取列表编号
 for list in exist_document.Lists:
 
