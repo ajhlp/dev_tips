@@ -23,7 +23,7 @@ exist_document = word.Documents.Open(r"D:\xxx\xxx.docx")
 
 > 段落可以修改样式、设置大纲级别等. 👉[官方文档](https://docs.microsoft.com/zh-cn/dotnet/api/microsoft.office.interop.word.paragraph?view=word-pia)
 
-```
+```python
 # 遍历文档中的所有段落
 for paragraph in exist_document.Paragraphs:
     # 获取大纲级别 (1-9级, 10普通文本)
