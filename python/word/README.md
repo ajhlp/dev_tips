@@ -5,6 +5,8 @@
 ## 1. 初始化应用实例
 
 ```python
+from win32com import client
+
 # 启动word应用程序
 word = client.gencache.EnsureDispatch("Word.Application")
 ```
@@ -17,6 +19,15 @@ new_document = word.Documents.Add()
 
 # 打开已有文档
 exist_document = word.Documents.Open(r"D:\xxx\xxx.docx")
+
+# 当前已打开且为激活状态的文档
+active_document = word.ActiveDocument
+
+# 获取文件页码
+active_document.ComputeStatistics(client.constants.wdStatisticPages)
+
+# 跳转页面
+active_document.GoTo(client.constants.wdGoToPage, client.constants.wdGoToAbsolute, 86)
 ```
 
 ## 3. Paragraph 段落
