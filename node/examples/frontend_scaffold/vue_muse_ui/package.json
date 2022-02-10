@@ -23,7 +23,7 @@
     "muse-ui": "^3.0.2",
     "muse-ui-loading": "^0.2.0",
     "muse-ui-message": "^0.2.1",
-    "node-sass": "^4.9.2",
+    "node-sass": "^7.0.0",
     "nprogress": "^0.2.0",
     "sass-loader": "^7.0.3",
     "vue": "^2.6.10",
